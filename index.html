@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Username Input</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-size: 90px;
+
+        }
+        logo {
+            position: absolute;
+            top: 10px; /* Adjust this value to control the distance from the top */
+            left: 10px; /* Adjust this value to control the distance from the left */
+            width: 10px; /* Adjust the width of your circular logo */
+            height: 40px; /* Adjust the height of your circular logo */
+            border-radius: 50%;
+        }
+
+        button {
+            background-color: skyblue;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: lightblue;
+        }
+        input {
+    width: 300px; /* Adjust the width as needed */
+    height:120px;
+}
+text{
+    width:110px;
+}
+    </style>
+</head>
+<body>
+     <img id="logo" src="Screenshot_20240221-172818.jpg" alt="Logo description">
+    
+    
+    
+    <label for="college-name">Enter your college name:</label>
+    <br>
+    <input type="text" id="college-name" placeholder="Type your college name">
+    <br>
+    <br>
+    
+    <label for="student-name">Enter student's name:</label>
+    <br>
+    <input type="text" id="student-name" placeholder="Type your name">
+    <br>
+    <br>
+    <button onclick="printName()">Submit</button>
+    
+    <p id="display-name"></p>
+
+    <script>
+        function printName() {
+            var studentName = document.getElementById('student-name').value;
+            document.getElementById('display-name').innerHTML = studentName + ' gand maro ga ap ki!';
+        }
+    </script>
+</body>
+</html>
